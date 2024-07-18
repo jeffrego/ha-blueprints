@@ -66,12 +66,6 @@ blueprint:
           max: 100
           unit_of_measurement: percentage
       default: 20
-    middle_button_action:
-      name: Middle (Favorite) Button Override
-      description: "Action(s) to execute when MIDDLE button is pressed. If left blank, action will default to setting the light entity to a brightness 80% and color temperature 2700."
-      selector:
-        action: {}
-      default:
 
 trigger:
   - platform: device
@@ -121,7 +115,6 @@ variables:
   step: !input step
   speed: !input speed
   favorite_level: !input favorite_level
-  middle_button_action: !input middle_button_action
 
 condition: []
 
